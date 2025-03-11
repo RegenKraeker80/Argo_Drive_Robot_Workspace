@@ -13,7 +13,7 @@ To start the simulation, use the following command:
 
     ros2 launch ros2_ws_robot_launch launch_sim.launch.py
 
-Features
+Features:
 
-    Scan Merger Node:
-    This workspace includes a Scan Merger Node that merges two laser scans into a single virtual scanner. This enhances the robot's environmental perception and improves navigation capabilities.
+Scan Merger Node:
+This workspace includes a Scan Merger Node that merges two laser scans into a single virtual scanner.
