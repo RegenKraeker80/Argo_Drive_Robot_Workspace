@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_ws_robot_launch</name>
+  <version>0.0.0</version>
+  <description>TODO: Launch-Paket für den Roboter</description>
+  <maintainer email="awalbrunn@witron.de">Walbrunn</maintainer>
+  <license>TODO: License declaration</license>
+  
+  <!-- Abhängigkeiten für die Nutzung mit ROS2 -->
+  <depend>tf2</depend>
+  <depend>rclpy</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>launch_testing</depend>
+  <depend>launch_testing_ros</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>slam_toolbox</depend>
+  <depend>soem</depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>nav2_bringup</depend>
+  <depend>nav2_msgs</depend>
+  <depend>sick_safetyscanners2</depend>
+  <depend>tf2_sensor_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>hardware_interface</depend>
+  <depend>ros2_control</depend>
+
+
+  <!-- Gazebo-Abhängigkeiten -->
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_ros2_control</depend>
+
+  <!-- Roboterbeschreibung -->
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <depend>EtherCAT</depend>
+  
+  <!-- Controller-Manager -->
+  <depend>controller_manager</depend>
+  <depend>ros2_controllers</depend>
+  <depend>rviz_ogre_vendor</depend>
+
+  <!-- Test-Abhängigkeiten -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Build-Werkzeuge -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <hardware_interface plugin="ethercat/plugin.xml"/>
+  </export>
+</package>

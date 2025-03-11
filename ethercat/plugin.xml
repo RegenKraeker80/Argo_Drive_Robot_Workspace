@@ -1,0 +1,7 @@
+<library path="argo_drive_hardware">
+  <class name="argo_drive_hardware::ArgoDriveHardware"
+         type="argo_drive_hardware::ArgoDriveHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>Argo Drive Hardware Interface</description>
+  </class>
+</library>
